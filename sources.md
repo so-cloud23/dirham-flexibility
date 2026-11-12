@@ -25,7 +25,7 @@
 | Title | Source and link | Date published | Found by | Read by | Used for |
 | --- | --- | --- | --- | --- | --- |
 | The Role of a Flexible Foreign Exchange System in Macroeconomic Adjustment: The Case of Morocco (policy brief, Abdelaaziz Ait Ali) | [Policy Center for the New South] (https://www.policycenter.ma/index.php/publications/role-flexible-foreign-exchange-system-macroeconomic-adjustment-case-morocco) | January 2019 | Rayane | Salma | Why a flexible rate helps Morocco absorb shocks; the 2018 widening to ±2.5% as a first step towards a managed float |
-| Morocco: 2026 Article IV Consultation and Review Under the Flexible Credit Line Arrangement (IMF Country Report No. 26/72) | --- | March 2026 | Rayane | Salma | The latest offcial view : band widened in 2018 and 2020; dirham near the stronf end of the bans since mid-2025; plan for an inflation target, possibly in 2027; why the reform is gradual |
+| Morocco: 2026 Article IV Consultation and Review Under the Flexible Credit Line Arrangement (IMF Country Report No. 26/72) | [IMF] (https://www.imf.org/-/media/files/publications/cr/2026/english/1marea2026001-source-pdf.pdf) | March 2026 | Rayane | Salma | The latest offcial view : band widened in 2018 and 2020; dirham near the stronf end of the bans since mid-2025; plan for an inflation target, possibly in 2027; why the reform is gradual |
 
 
 
