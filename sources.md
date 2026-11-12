@@ -2,7 +2,9 @@
 ## Exchange rates used in the analysis 
 | Data | Source | Period | Downloaded | By | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Daily exchange rates: EUR/MAD, USD/MAD, GBP/MAD | Bank Al-Maghrib, official API(cours virement, middle rate), via its developer portal | 2015-2025 | 11/11/2026 | Salma | Middle rate = moyen where publishes ; for older dates , the average of the buying and selling rates. Matches the website's reference rates on the dates checked (29/12/2025 , 16/03/2015). 2870 dates retrieved; no rates on Moroccan public holidays or 25-26 December ([n] days)
+| Daily exchange rates: EUR/MAD, USD/MAD, GBP/MAD | Bank Al-Maghrib, official API(cours virement, middle rate), via its developer portal | 2015-2025 | 11/11/2026 | Salma | Middle rate = moyen where publishes ; for older dates , the average of the buying and selling rates. Matches the website's reference rates on the dates checked (29/12/2025 , 16/03/2015). 2628 dates retrieved; no rates on Moroccan public holidays or 25-26 December| 
+| Daily EUR/MAD, USD/MAD , GBP/MAD | Bank Al-Maghrib, official API (cours virement, middle rate), via its developer portal | 2015-2025 | 11/11/2026 | Salma | The API returned no rates for 242 weekdays : 140 Moroccan public holidays and 25-26 December, and 102 other days (mostly in 2020-2021) for which the API holds no data (tested on 15/04/2020 : 0 entries with any date , time or currency option)  |
+| Daily EUR/MAD, USD/MAD , GBP/MAD for 102 API gaps | Bank Al-Maghrib website, cours de référence page, entered by hand ('fx_bam_manual.csv') | 2015-2025 | 12/11/2026 | Salma(2015-2020) & Rayane (2021-2025) | Rates confirmed on the website for days missing from the API (checked first on 15/04/2020). Middle rate , or the average of buying and selling rates where only those are shown |
 |Final clean series (fx_rates.csv) | Built from the row above  | 2015-2025 | 11/11/2026 | Rayane | One row per weekday; holidays filled with the previous working day's rate; 1 January 2015 takes the first available rate. Flag check on the official data : to be added |
 
 ## Sources tested and not used
