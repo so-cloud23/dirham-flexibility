@@ -15,7 +15,7 @@
 | Exports by partner | [WITS - World Bank] (https://wits.worldbank.org) | 2023 | 17/11/2026 | Salma | Sheet "Partner", grouped into eurozone (20 countries) , UK, US, rest of the world.| 
 | Exports , import, remittance (% of GDP), REER| [World Bank - WDI] (https://data.worldbank.org) via 'wbgapi' |2015 - 2025 | 17/11/2026 | Salma | NE.EXP.GNFS.ZS, NE.IMP.GNFS.ZS, BX.TRF.PWKR.DT.GD.ZS, PX.REX.REER, 2015–2025.| 
 | Remittances (US$ and MAD) | [World Bank – WDI] (https://data.worldbank.org) via 'wbgapi' | 2015-2025 | 17/11/2026 | Salma | BX.TRF.PWKR.CD.DT, 2015–2025. Converted to MAD with the yearly average BAM USD/MAD rate. | 
-| Remittances check | [Office des Changes] (https://www.oc.gov.ma/fr/publications) | 2019 , 2023 | Salma |"Recettes MRE", December issues: 64.86bn MAD (2019), 115.15bn MAD (2023). World Bank is 3.2% and 3.4% higher, because it also includes compensation of employees. | 
+| Remittances check | [Office des Changes] (https://www.oc.gov.ma/fr/publications) | 2019 , 2023 | 17/11/2026 | Salma |"Recettes MRE", December issues: 64.86bn MAD (2019), 115.15bn MAD (2023). World Bank is 3.2% and 3.4% higher, because it also includes compensation of employees. | 
 
 
 ## Sources tested and not used
