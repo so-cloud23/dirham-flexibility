@@ -7,6 +7,17 @@
 | Daily EUR/MAD, USD/MAD , GBP/MAD for 102 API gaps | Bank Al-Maghrib website, cours de référence page, entered by hand ('fx_bam_manual.csv') | 2015-2025 | 12/11/2026 | Salma(2015-2020) & Rayane (2021-2025) | Rates confirmed on the website for days missing from the API (checked first on 15/04/2020). Middle rate , or the average of buying and selling rates where only those are shown |
 |Final clean series (fx_rates.csv) | Built from the row above  | 2015-2025 | 11/11/2026 | Rayane | One row per weekday; holidays filled with the previous working day's rate; 1 January 2015 takes the first available rate. Flag check on the official data : to be added |
 
+## Trade and external date 
+
+| Data | Source | Period | Downloaded | By | Notes 
+| --- | --- | --- | --- | --- | --- |
+| Exports by product group | [WITS - World Bank] (https://wits.worldbank.org) | 2023 | 17/11/2026 | Salma | Grouping "Sector" , sheet "Product"  | Grouped into 6 categories. Total US$ 42.46bn (goods only) | 
+| Exports by partner | [WITS - World Bank] (https://wits.worldbank.org) | 2023 | 17/11/2026 | Salma | Sheet "Partner", grouped into eurozone (20 countries) , UK, US, rest of the world.| 
+| Exports , import, remittance (% of GDP), REER| [World Bank - WDI] (https://data.worldbank.org) via 'wbgapi' |2015 - 2025 | 17/11/2026 | Salma | NE.EXP.GNFS.ZS, NE.IMP.GNFS.ZS, BX.TRF.PWKR.DT.GD.ZS, PX.REX.REER, 2015–2025.| 
+| Remittances (US$ and MAD) | [World Bank – WDI] (https://data.worldbank.org) via 'wbgapi' | 2015-2025 | 17/11/2026 | Salma | BX.TRF.PWKR.CD.DT, 2015–2025. Converted to MAD with the yearly average BAM USD/MAD rate. | 
+| Remittances check | [Office des Changes] (https://www.oc.gov.ma/fr/publications) | 2019 , 2023 | Salma |"Recettes MRE", December issues: 64.86bn MAD (2019), 115.15bn MAD (2023). World Bank is 3.2% and 3.4% higher, because it also includes compensation of employees. | 
+
+
 ## Sources tested and not used
 
 | Data | Source | Period | Downloaded | By | Notes |
@@ -14,6 +25,7 @@
 | Daily exchange rates: EUR/MAD, USD/MAD, GBP/MAD | Yahoo Finance, using yfinance (EURMAD=X, USDMAD=X, GBPMAD=X) | 2015-2025 | 04/11/2026 | Salma and Rayane | USD/MAD flagged 399 days (EUR 6 , GBP 20) by a spike test. EUR checked against Bank-Al Maghrib by Salma; GBP rebuilt as a cross rate by Rayane; USD rebuilt as a cross rate by Salma and Rayane. Compared with Bank-AlMaghrib's offical rates (by Salma), EUR/MAD was on average about 2.9% lower on the 3 days tested, and the cross rates inherited the gap. Tests kept in 'yahoo_test.ipynb' |
 | Daily EUR/GBP rate | Yahoo Finance (EURGBP=X) | 2015-2025 | 10/11/2026 | Rayane | Used to calculate GBP/MAD cross rates (EUR/MAD ÷ EUR/GBP). Flagged movements compared with Bank Al-Maghrib rates; corrections and missing official rates recorded in a cleaning log. |
 | Bank Al-Maghrib website , read by code | bkam.ma, cours de référence pages | 2015-2025 | 11/11/2026 | Salma | The site blocks automated requests (403 Forbidden), so the official API was used instead. |
+| Exports by product and partner | [OEC ] [oec.world](https://oec.world) | 2023 | 17/11/2026 | Salma | Detailed downloads need a paid Pro account, so WITS was used instead. | 
 
 ## Other data
 
