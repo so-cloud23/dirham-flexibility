@@ -3,9 +3,11 @@
 | Data | Source | Period | Downloaded | By | Notes |
 | --- | --- | --- | --- | --- | --- |
 | Daily exchange rates: EUR/MAD, USD/MAD, GBP/MAD | Bank Al-Maghrib, official API(cours virement, middle rate), via its developer portal | 2015-2025 | 11/11/2026 | Salma | Middle rate = moyen where publishes ; for older dates , the average of the buying and selling rates. Matches the website's reference rates on the dates checked (29/12/2025 , 16/03/2015). 2628 dates retrieved; no rates on Moroccan public holidays or 25-26 December| 
-| Daily EUR/MAD, USD/MAD , GBP/MAD | Bank Al-Maghrib, official API (cours virement, middle rate), via its developer portal | 2015-2025 | 11/11/2026 | Salma | The API returned no rates for 242 weekdays : 140 Moroccan public holidays and 25-26 December, and 102 other days (mostly in 2020-2021) for which the API holds no data (tested on 15/04/2020 : 0 entries with any date , time or currency option)  |
+| Daily EUR/MAD, USD/MAD , GBP/MAD | Bank Al-Maghrib, official API (cours virement, middle rate), via its developer portal | 2015-2025 | 11/11/2026 | Salma | The API returned no rates for 242 weekdays : 140 Moroccan public holidays plus 25-26 December, and 102 other days (mostly in 2020-2021) for which the API holds no data (tested on 15/04/2020 : 0 entries with any date , time or currency option)  |
 | Daily EUR/MAD, USD/MAD , GBP/MAD for 102 API gaps | Bank Al-Maghrib website, cours de référence page, entered by hand ('fx_bam_manual.csv') | 2015-2025 | 12/11/2026 | Salma(2015-2020) & Rayane (2021-2025) | Rates confirmed on the website for days missing from the API (checked first on 15/04/2020). Middle rate , or the average of buying and selling rates where only those are shown |
-|Final clean series (fx_rates.csv) | Built from the row above  | 2015-2025 | 11/11/2026 | Rayane | One row per weekday; holidays filled with the previous working day's rate; 1 January 2015 takes the first available rate. Flag check on the official data : to be added |
+|Final clean series (fx_rates.csv) | Built from the row above  | 2015-2025 | 13/11/2026 | Rayane | One row per weekday; holidays filled with the previous working day's rate; 1 January 2015 takes the first available rate. Flag check on the official data : to be added |
+|Inflation (annual average CPI) |[HCP – IPC releases] (https://www.hcp.ma/Actualite-Indices-des-prix-a-la-consommation-IPC_r349.html) | 2015–2025 | Salma | From HCP's December CPI release of each year ("IPC annuel moyen"), one page per year. CPI base changed from 2006 to 2017 in 2020; yearly % changes remain comparable. To be checked against World Bank FP.CPI.TOTL.ZG (Rayane). |
+
 
 ## Trade and external date 
 
@@ -26,7 +28,8 @@
 | Daily EUR/GBP rate | Yahoo Finance (EURGBP=X) | 2015-2025 | 10/11/2026 | Rayane | Used to calculate GBP/MAD cross rates (EUR/MAD ÷ EUR/GBP). Flagged movements compared with Bank Al-Maghrib rates; corrections and missing official rates recorded in a cleaning log. |
 | Bank Al-Maghrib website , read by code | bkam.ma, cours de référence pages | 2015-2025 | 11/11/2026 | Salma | The site blocks automated requests (403 Forbidden), so the official API was used instead. |
 | Exports by product and partner | [OEC ] [oec.world](https://oec.world) | 2023 | 17/11/2026 | Salma | Detailed downloads need a paid Pro account, so WITS was used instead. | 
-
+| CPI weights | [HCP – Brefs du Plan n° 3] (https://hcp.ma/file/230486) | 2014 survey | Salma | Weights from a 2018 note, published before the base 2017 CPI. They differ slightly from the official file (e.g. education 6.25% vs 5.64%), so the official file was used. |
+for
 ## Other data
 
 | Data | Source | Period | Downloaded | By | Notes |
