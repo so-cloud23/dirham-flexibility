@@ -28,7 +28,7 @@
 | Daily EUR/GBP rate | Yahoo Finance (EURGBP=X) | 2015-2025 | 10/11/2026 | Rayane | Used to calculate GBP/MAD cross rates (EUR/MAD ÷ EUR/GBP). Flagged movements compared with Bank Al-Maghrib rates; corrections and missing official rates recorded in a cleaning log. |
 | Bank Al-Maghrib website , read by code | bkam.ma, cours de référence pages | 2015-2025 | 11/11/2026 | Salma | The site blocks automated requests (403 Forbidden), so the official API was used instead. |
 | Exports by product and partner | [OEC ] [oec.world](https://oec.world) | 2023 | 17/11/2026 | Salma | Detailed downloads need a paid Pro account, so WITS was used instead. | 
-| CPI weights | [HCP – Brefs du Plan n° 3] (https://hcp.ma/file/230486) | 2014 survey | Salma | Weights from a 2018 note, published before the base 2017 CPI. They differ slightly from the official file (e.g. education 6.25% vs 5.64%), so the official file was used. |
+| CPI weights | [HCP – Brefs du Plan n° 3] (https://hcp.ma/file/230486) | 2014 survey |18/11/2026 | Salma | Weights from a 2018 note, published before the base 2017 CPI. They differ slightly from the official file (e.g. education 6.25% vs 5.64%), so the official file was used. |
 for
 ## Other data
 
@@ -41,8 +41,8 @@ for
 ## Background reading
 | Title | Source and link | Date published | Found by | Read by | Used for |
 | --- | --- | --- | --- | --- | --- |
-| The Role of a Flexible Foreign Exchange System in Macroeconomic Adjustment: The Case of Morocco (policy brief, Abdelaaziz Ait Ali) | [Policy Center for the New South] (https://www.policycenter.ma/index.php/publications/role-flexible-foreign-exchange-system-macroeconomic-adjustment-case-morocco) | January 2019 | Rayane | Salma | Why a flexible rate helps Morocco absorb shocks; the 2018 widening to ±2.5% as a first step towards a managed float |
-| Morocco: 2026 Article IV Consultation and Review Under the Flexible Credit Line Arrangement (IMF Country Report No. 26/72) | [IMF] (https://www.imf.org/-/media/files/publications/cr/2026/english/1marea2026001-source-pdf.pdf) | March 2026 | Rayane | Salma | The latest offcial view : band widened in 2018 and 2020; dirham near the stronf end of the bans since mid-2025; plan for an inflation target, possibly in 2027; why the reform is gradual |
+| The Role of a Flexible Foreign Exchange System in Macroeconomic Adjustment: The Case of Morocco (policy brief, Abdelaaziz Ait Ali) | [Policy Center for the New South] (https://www.policycenter.ma/index.php/publications/role-flexible-foreign-exchange-system-macroeconomic-adjustment-case-morocco) | January 2019 | Rayane | Salma | Used for: the reasons for the reform (shock absorber; reserves fell 27% in 2010–2012), the 2015 and 2018 changes (basket 80/20 → 60/40; band ±0.3% → ±2.5%), why the transition is gradual (firms need time to adapt and hedge), and the long-term goal of a managed float over about ten years, with Chile as a model. |
+| Morocco: 2026 Article IV Consultation and Review Under the Flexible Credit Line Arrangement (IMF Country Report No. 26/72) | [IMF] (https://www.imf.org/-/media/files/publications/cr/2026/english/1marea2026001-source-pdf.pdf) | March 2026 | Rayane | Salma | Used for: where the dirham stands in 2025 (near the strong end of the ±5% band, REER undervalued by 2.7%, reserves US$48.6bn, no BAM intervention), why the transition stays gradual (FX market depth, hedging tools, sticky prices), and the next step (an inflation target potentially in 2027 with the band unchanged; the IMF prefers removing the band).|
 ### Tourism receipts
 
 - **Primary source:** Office des Changes – [Evolution des recettes de voyages](https://www.oc.gov.ma/sites/default/files/Evol_recettes_Voyages_16.xlsx).
