@@ -60,5 +60,14 @@ for
 - **Result:** Imports were $8,383.10 million and exports were $9,252.99 million. The imports-to-exports ratio was 90.60%.
 - **Output:** `data/clean/transport_imports_exports_ratio.csv`.
 - **Limitation:** WITS Transportation is a broad product group and does not isolate car parts or vehicle exports. Therefore, this ratio is a sector-level proxy, not an exact measure of imported car parts used in Moroccan car production.
+### Trade summary
+
+- **Source:** World Bank WITS Morocco trade data, 2023.
+- **Imports:** `data/clean/imports_by_category.csv`.
+- **Exports:** `data/clean/exports_by_category.csv`.
+- **Additional foreign-currency earners:** Office des Changes tourism receipts and remittances data.
+- **Method:** Combined merchandise imports and exports by WITS product category. Tourism receipts and remittances are included separately, converted to USD equivalents.
+- **Output:** `data/clean/trade_summary.csv`.
+- **Limitation:** WITS product groups are broad categories, not exact HS classifications. Transportation is used as a proxy for the automotive sector. The datasets do not identify the actual currency of payment, so the main currency is left unspecified.
 
 
