@@ -43,6 +43,22 @@ for
 | --- | --- | --- | --- | --- | --- |
 | The Role of a Flexible Foreign Exchange System in Macroeconomic Adjustment: The Case of Morocco (policy brief, Abdelaaziz Ait Ali) | [Policy Center for the New South] (https://www.policycenter.ma/index.php/publications/role-flexible-foreign-exchange-system-macroeconomic-adjustment-case-morocco) | January 2019 | Rayane | Salma | Why a flexible rate helps Morocco absorb shocks; the 2018 widening to ±2.5% as a first step towards a managed float |
 | Morocco: 2026 Article IV Consultation and Review Under the Flexible Credit Line Arrangement (IMF Country Report No. 26/72) | [IMF] (https://www.imf.org/-/media/files/publications/cr/2026/english/1marea2026001-source-pdf.pdf) | March 2026 | Rayane | Salma | The latest offcial view : band widened in 2018 and 2020; dirham near the stronf end of the bans since mid-2025; plan for an inflation target, possibly in 2027; why the reform is gradual |
+### Tourism receipts
 
+- **Primary source:** Office des Changes – [Evolution des recettes de voyages](https://www.oc.gov.ma/sites/default/files/Evol_recettes_Voyages_16.xlsx).
+- **Data collected:** Annual tourism receipts for 2015–2025, converted from MAD millions to MAD billions.
+- **Output file:** `data/clean/oc_tourism.csv`.
+- **Cross-check:** World Bank indicator `ST.INT.RCPT.CD` (International tourism receipts, current US$).
+- **Limitation:** The World Bank API returned a missing value (`NaN`) for Morocco in 2023. Therefore, a comparison with Office des Changes could not be completed for that year.
+- **Decision:** Office des Changes figures are retained as the primary tourism receipts dataset.
+### Transportation imports and exports
+
+- **Source:** World Bank WITS – Morocco trade data, 2023.
+- **Import file:** `wits_imports_product_2023.xlsx`.
+- **Export file:** `wits_exports_product_2023.xlsx`.
+- **Method:** Compared WITS Transportation imports with Transportation exports, using USD millions.
+- **Result:** Imports were $8,383.10 million and exports were $9,252.99 million. The imports-to-exports ratio was 90.60%.
+- **Output:** `data/clean/transport_imports_exports_ratio.csv`.
+- **Limitation:** WITS Transportation is a broad product group and does not isolate car parts or vehicle exports. Therefore, this ratio is a sector-level proxy, not an exact measure of imported car parts used in Moroccan car production.
 
 
